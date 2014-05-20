@@ -24,7 +24,7 @@ The sample packages include a basic (dependency-free) library as well as one dep
 Adding the package manager to your system path (bash)...
 
     $ pushd .
-    $ cd sample-repo/packager/
+    $ cd packager/
     $ export PATH=${PATH}:`pwd`
     $ popd
 
