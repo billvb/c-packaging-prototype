@@ -24,12 +24,12 @@ The sample packages include a basic (dependency-free) library as well as one dep
 Adding the package manager to your system path (bash)...
 
     $ pushd .
-    $ cd cpak-examples/sample-repo/packager/
+    $ cd sample-repo/packager/
     $ export PATH=${PATH}:`pwd`
     $ popd
 
     $ pushd .
-    $ cd cpak-examples/sim-repository
+    $ cd sim-repository
     $ export CPAK_REPO_ROOT=`pwd`
     $ popd
 
