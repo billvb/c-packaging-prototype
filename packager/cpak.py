@@ -30,7 +30,8 @@ class Package(object):
 
         logging.debug('Setting CWD to %s.' % self.packages_base)
         os.chdir(self.packages_base)
-        cmds = ['git', 'clone', os.path.join(self.repo_source, self.name)]
+        #cmds = ['git', 'clone', os.path.join(self.repo_source, self.name)]
+        cmds = ['cp', '-r', os.path.join(self.repo_source, self.name), '.']
         logging.info('Executing: %s' % ' '.join(cmds))
         rc = subprocess.call(cmds)
         if rc != 0:
@@ -118,6 +119,7 @@ class PackageContext(object):
 
     def rebuild_project(self):
         raise NotImplemented
+
 
 if __name__ == '__main__':
     logging.basicConfig(format='%(message)s', level=logging.DEBUG)
